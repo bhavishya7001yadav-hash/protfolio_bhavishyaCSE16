@@ -1,0 +1,333 @@
+    <!DOCTYPE html>
+<html>
+<head>
+    <title>My Portfolio</title>
+    <style>
+      /* --- BODY & BACKGROUND --- */
+body {
+    background-color: #0f1115;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #d1d5db;
+}
+
+.main-container {
+    width: 100%;
+}
+
+/* --- SLIDES --- */
+.slide {
+    background-color: #161a20;
+    width: calc(100% - 120px);
+    max-width: 1500px;
+    margin: 60px auto;
+    padding: 80px 60px;
+    box-shadow: 0px 10px 30px rgba(0,0,0,0.6);
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.center-slide {
+    text-align: center;
+    padding: 120px 60px;
+}
+
+/* --- HEADINGS --- */
+h1 {
+    font-size: 120px;
+    margin: 20px 0;
+    text-transform: uppercase;
+    letter-spacing: -4px;
+    color: #f9fafb;
+}
+
+h2 {
+    font-size: 40px;
+    margin: 0;
+    text-transform: uppercase;
+    color: #f3f4f6;
+}
+
+h3 {
+    font-size: 20px;
+    margin-top: 5px;
+    color: #9ca3af;
+}
+
+/* --- TEXT --- */
+p {
+    line-height: 1.7;
+    color: #cbd5e1;
+    font-size: 14px;
+}
+
+/* --- ACCENT TEXT --- */
+.fancy-text {
+    font-family: 'Brush Script MT', cursive;
+    color: #7c3aed;
+    font-size: 30px;
+    margin-bottom: -10px;
+    display: block;
+}
+
+.pattern {
+    color: #6b7280;
+    letter-spacing: 5px;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+/* --- LAYOUT --- */
+.row {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.col-half { width: 50%; }
+.col-small { width: 30%; }
+.col-large { width: 70%; }
+
+/* --- IMAGE FRAME --- */
+.browser-frame {
+    background-color: #0b0d12;
+    padding: 12px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.7);
+}
+
+.browser-dots { margin-bottom: 10px; }
+
+.dot {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.red { background: #ff5f56; }
+.yellow { background: #ffbd2e; }
+.green { background: #27c93f; }
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* --- SKILLS --- */
+.skills-list {
+    list-style-type: none;
+    padding: 0;
+    line-height: 2;
+    color: #e5e7eb;
+}
+
+/* --- DIVIDERS --- */
+.short-line {
+    width: 50px;
+    border: 1px solid #7c3aed;
+}
+
+/* --- CONTACT INFO --- */
+.contact-info {
+    margin-top: 20px;
+    border-top: 2px solid #7c3aed;
+    padding-top: 10px;
+    font-weight: bold;
+    color: #e5e7eb;
+}
+
+/* --- GALLERY --- */
+.gallery {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.gallery img {
+    height: 150px;
+    object-fit: cover;
+    width: 30%;
+    border-radius: 4px;
+}
+
+/* --- CONTACT FORM --- */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 14px;
+    font-size: 14px;
+    border: 1px solid #374151;
+    outline: none;
+    background-color: #0f1115;
+    color: #f9fafb;
+    font-family: Arial, sans-serif;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #9ca3af;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #7c3aed;
+}
+
+.contact-form button {
+    padding: 14px;
+    background-color: #7c3aed;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    letter-spacing: 1px;
+    transition: 0.25s ease;
+}
+
+.contact-form button:hover {
+    background-color: #6d28d9;
+}
+
+
+    </style>
+</head>
+<body>
+
+    <div class="main-container">
+
+        <div class="slide center-slide">
+            <div class="pattern">
+                x x x x x x <br>
+                x x x x x x
+            </div>
+            <h1>PORTFOLIO</h1>
+            <p>2025 — 2029</p>
+        </div>
+
+        <div class="slide">
+            <div class="row">
+                <div class="col-half">
+                    <div class="browser-frame">
+                        <div class="browser-dots">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <img src="pfp.jpg" alt="My Photo">
+                    </div>
+                </div>
+
+                <div class="col-half">
+                    <h2>ABOUT ME</h2>
+                    <h3>Bhavishya yadav</h3>
+                    <div class="pattern">x x x x x x</div>
+                    <p>
+                        Hey there!, My name is Bhavishya yadav. I am 19 years old and I am from banaras,India. A student of ABES Engineering College Ghaziabad pursuing B.Tech in Computer Science and Engineering.
+                        <br><br>
+                       I am Bhavishya Yadav, a B.Tech CSE student at ABES EC Ghaziabad (Class of 2029). As an aspiring Software Engineer and Web Developer, I am currently bridging the gap between creative front-end development and logic-driven Data Structures and Algorithms. I am dedicated to building scalable web solutions while continuously refining my technical problem-solving skills.
+                    </p>
+                    
+                    <div class="contact-info">
+                        Contact me:<br>
+                        Phone: 9918257001 &nbsp; | &nbsp; linkedIn: Bhavishya Yadav
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="slide">
+            <div class="row">
+                <div class="col-half">
+                    <span class="fancy-text">Technical</span>
+                    <h2>SKILLS</h2>
+                    <ul class="skills-list">
+                        <li>+ C++</li>
+                        <li>+ Python</li>
+                        <li>+ HTML/CSS/java script</li>
+                        <li>+ Data Structures and Algorithms</li>
+                        <li>+ web designing </li>
+                    </ul>
+                </div>
+                <div class="col-half">
+                     <img src="2.png" alt="Working Illustration">
+                </div>
+            </div>
+        </div>
+
+        <div class="slide">
+            <div class="row">
+                <div class="col-small">
+                    <span class="fancy-text">Pojects</span>
+                    <h2>DESIGN</h2>
+                    <p>By HTML / CSS</p>
+                    <hr class="short-line">
+                </div>
+                <div class="col-large">
+                    <div class="gallery">
+                        <img src="project1.png">
+                        <img src="project2.png">
+                        <img src="project3.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="slide">
+            <div class="row">
+                <div class="col-small">
+                    <span class="fancy-text">Project 2</span>
+                    <h2>web-site clone</h2>
+                    <p>by HTML/CSS</p>
+                </div>
+                <div class="col-large">
+                    <div class="gallery">
+                        <img src="image.png">
+                        <img src="image 1.png">
+                        <img src="image 2.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+    <div class="row">
+        <div class="col-half">
+            <span class="fancy-text">Let’s talk</span>
+            <h2>CONTACT ME</h2>
+            <p>
+                Have a project, idea, or opportunity?  
+                Drop your details and I’ll get back to you.
+            </p>
+            <hr class="short-line">
+        </div>
+
+        <div class="col-half">
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+        <div class="slide center-slide">
+             <div class="pattern">x x x x x x</div>
+             <h2>THANK YOU</h2>
+             <br>
+             <p>I hope we can work together soon!</p>
+        </div>
+
+    </div>
+
+</body>
+</html>
