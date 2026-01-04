@@ -1,6 +1,8 @@
     <!DOCTYPE html>
 <html>
 <head>
+    <meta name="robots" content="index, follow">
+
     <title>My Portfolio</title>
     <style>
       /* --- BODY & BACKGROUND --- */
@@ -309,7 +311,8 @@ img {
         </div>
 
         <div class="col-half">
-            <form class="contact-form">
+           <form class="contact-form" onsubmit="return false;">
+
                 <input type="text" placeholder="Your Name" required>
                 <input type="email" placeholder="Your Email" required>
                 <textarea placeholder="Your Message" rows="5" required></textarea>
